@@ -1,10 +1,9 @@
 // src/pages/CategoryPage.jsx
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-
 import { fetchNews } from '../api/newsApi';
-import Card from '../components/Card';
 import SkeletonCard from './../components/SkeletonCard';
+import Card from '../components/card';
 
 export default function CategoryPage() {
   const { name } = useParams();
